@@ -1,0 +1,479 @@
+html, address,
+blockquote,
+body, dd, div,
+dl, dt, fieldset, form,
+frame, frameset,
+h1, h2, h3, h4,
+h5, h6, noframes,
+ol, p, ul, center,
+dir, hr, menu, pre {
+    display: block;
+    unicode-bidi: embed
+}
+
+li {
+    display: list-item
+}
+
+head {
+    display: none
+}
+
+table {
+    display: table
+}
+
+tr {
+    display: table-row
+}
+
+thead {
+    display: table-header-group
+}
+
+tbody {
+    display: table-row-group
+}
+
+tfoot {
+    display: table-footer-group
+}
+
+col {
+    display: table-column
+}
+
+colgroup {
+    display: table-column-group
+}
+
+td, th {
+    display: table-cell
+}
+
+caption {
+    display: table-caption
+}
+
+th {
+    font-weight: bolder;
+    text-align: center
+}
+
+caption {
+    text-align: center
+}
+
+body {
+    margin: 8px
+}
+
+h1 {
+    font-size: 2em;
+    margin: .67em 0
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: .75em 0
+}
+
+h3 {
+    font-size: 1.17em;
+    margin: .83em 0
+}
+
+h4, p,
+blockquote, ul,
+fieldset, form,
+ol, dl, dir,
+menu {
+    margin: 1.12em 0
+}
+
+h5 {
+    font-size: .83em;
+    margin: 1.5em 0
+}
+
+h6 {
+    font-size: .75em;
+    margin: 1.67em 0
+}
+
+h1, h2, h3, h4,
+h5, h6, b,
+strong {
+    font-weight: bolder
+}
+
+blockquote {
+    margin-left: 40px;
+    margin-right: 40px
+}
+
+i, cite, em,
+var, address {
+    font-style: italic
+}
+
+pre, tt, code,
+kbd, samp {
+    font-family: monospace
+}
+
+pre {
+    white-space: pre
+}
+
+button, textarea,
+input, select {
+    display: inline-block
+}
+
+big {
+    font-size: 1.17em
+}
+
+small, sub, sup {
+    font-size: .83em
+}
+
+sub {
+    vertical-align: sub
+}
+
+sup {
+    vertical-align: super
+}
+
+table {
+    border-spacing: 2px;
+}
+
+thead, tbody,
+tfoot {
+    vertical-align: middle
+}
+
+td, th, tr {
+    vertical-align: inherit
+}
+
+s, strike, del {
+    text-decoration: line-through
+}
+
+hr {
+    border: 1px inset
+}
+
+ol, ul, dir,
+menu, dd {
+    margin-left: 40px
+}
+
+ol {
+    list-style-type: decimal
+}
+
+ol ul, ul ol,
+ul ul, ol ol {
+    margin-top: 0;
+    margin-bottom: 0
+}
+
+u, ins {
+    text-decoration: underline
+}
+
+br:before {
+    content: "\A";
+    white-space: pre-line
+}
+
+center {
+    text-align: center
+}
+
+:link, :visited {
+    text-decoration: underline
+}
+
+:focus {
+    outline: thin dotted invert
+}
+
+/* Begin bidirectionality settings (do not change) */
+BDO[DIR="ltr"] {
+    direction: ltr;
+    unicode-bidi: bidi-override
+}
+
+BDO[DIR="rtl"] {
+    direction: rtl;
+    unicode-bidi: bidi-override
+}
+
+*[DIR="ltr"] {
+    direction: ltr;
+    unicode-bidi: embed
+}
+
+*[DIR="rtl"] {
+    direction: rtl;
+    unicode-bidi: embed
+}
+
+@media print {
+    h1 {
+        page-break-before: always
+    }
+
+    h1, h2, h3,
+    h4, h5, h6 {
+        page-break-after: avoid
+    }
+
+    ul, ol, dl {
+        page-break-before: avoid
+    }
+}
+
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+}
+
+header {
+    padding: 20px 20px 0 20px;
+}
+
+main {
+    width: 100%;
+}
+
+h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 96px;
+    line-height: 133px;
+    letter-spacing: 0.13em;
+    font-variant: small-caps;
+    margin: 0 !important;
+}
+
+h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 66px;
+    letter-spacing: 0.13em;
+    font-variant: small-caps;
+    margin: 0 !important;
+}
+
+p {
+    text-align: justify;
+    font-weight: 300 !important;
+    font-size: 18px;
+    display: block;
+}
+
+div, img, p {
+    box-sizing: border-box;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start
+}
+
+.header-container div {
+    display: flex;
+}
+
+.header-container h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.vl {
+    border-left: 1px solid black;
+    height: 150px;
+}
+
+.title {
+    text-align: center;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.txt-container {
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.txt-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#main p {
+    width: 40vw;
+    padding: 50px;
+
+}
+
+#main img {
+    border-radius: 80px;
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    width: 40vw;
+    padding: 50px;
+    flex-grow: 2;
+}
+
+#logo-container {
+    display: flex;
+    padding: 20px;
+}
+
+#social-container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#social-container img {
+    display: block;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 40px;
+
+}
+
+#fb-container {
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+#title {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    text-align: left;
+    width: 20%;
+    align-items: center;
+    margin: 0 !important;
+}
+
+#why-container {
+    display: flex;
+    flex-direction: column;
+    background-image: url("https://res.cloudinary.com/ninjafire/image/upload/v1595935500/Tribute%20page/pink_svg.svg");
+    background-origin: padding-box;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 60px;
+}
+
+#img-caption {
+    font-style: italic;
+    text-align: center;
+}
+
+#how-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 60px;
+}
+
+#act-container {
+    display: flex;
+    flex-direction: column;
+    background-image: url("https://res.cloudinary.com/ninjafire/image/upload/v1595935500/Tribute%20page/blue_svg.svg");
+    background-origin: padding-box;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 60px;
+}
+
+#logo {
+    height: 200px;
+    width: 200px;
+}
+
+@media (max-height: 800px) {
+    p {
+        font-size: 14px;
+    }
+
+    body {
+        width: 100%;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    #main img {
+        width: 100%;
+        padding: 10px 20px 10px 20px;
+        border-radius: 50px;
+    }
+
+    #main p {
+        width: 100%;
+        padding: 20px 50px 20px 50px;
+    }
+
+    #logo-container {
+        width: 100%;
+        justify-content: center;
+    }
+
+    #social-container {
+        width: 35%;
+        align-items: center;
+    }
+
+    #title {
+        width: 60%;
+        align-items: center;
+    }
+
+    #fb-container {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
